@@ -1,4 +1,18 @@
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
+}
+
+/* SPECIFICHE PER IMMAGINE BACKGROUND DEL MURO */
+.contenitore-titolo {
+    background-image: url(./img/wall.png);
+    background-size: cover;
+    height: 80px;
+}
+
+/* SPECIFICHE PER BACKGROUND SUGHERO */
+main {
+    height: 100vh;
+    background-image: url(./img/cork.png);
 }
