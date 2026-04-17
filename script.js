@@ -13,7 +13,7 @@ const chiamataApi = function() {
             console.log("ERRORE")
         
     })
-    .finally
-}
+    
+};
 
 chiamataApi();
