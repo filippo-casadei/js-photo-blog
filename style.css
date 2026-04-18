@@ -35,3 +35,15 @@ main {
     height: 100vh;
     background-image: url(./img/cork.png);
 }
+
+/* SPECIFICHE POLAROID */
+.polaroid {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+    padding: 14px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
