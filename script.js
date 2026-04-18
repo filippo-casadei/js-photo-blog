@@ -1,5 +1,5 @@
 // COLLEGAMENTO DOM
-let riga = document.querySelector(`.contenitore-foto`);
+let riga = document.querySelector(`.row`);
 
 // FUNZIONE PER LA CHIAMATA API
 const chiamataApi = function() {
@@ -22,13 +22,15 @@ const chiamataApi = function() {
 // FUNZIONE PER LA CREAZIONE DELLA SINGOLA POLAROID - DATI --> STRINGA HTML 
 let creaPolaroidHtml = function(elemento) {
     return `
-    <div class="polaroid border bg-white p-3 pb-4">
-        <img class="img-fluid" src="${elemento.url}">
-        <div class="polaroid-testo">
-            <p>${elemento.title}</p>
-            <p>${elemento.date}</p>
+    <div class="col-4">
+        <div class="polaroid border bg-white p-3 pb-4">
+            <img class="img-fluid" src="${elemento.url}">
+            <div class="polaroid-testo">
+                <p>${elemento.title}</p>
+                <p>${elemento.date}</p>
+            </div>
         </div>
-    </div>`
+    </div> `
 };
 
 // FUNZIONE CHE CICLA L'ARRAY DI OGGETTI
