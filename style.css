@@ -28,12 +28,17 @@
     background-image: url(./img/wall.png);
     background-size: cover;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* SPECIFICHE PER BACKGROUND SUGHERO */
 main {
-    height: 100vh;
+    min-height: 100vh;
+    background-repeat: repeat;
     background-image: url(./img/cork.png);
+    padding-bottom: 20px;
 }
 
 /* SPECIFICHE POLAROID */
