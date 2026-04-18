@@ -9,12 +9,13 @@ const chiamataApi = function() {
         return risposta.json()
     })
     .then(function(dato) {
-        return console.log(dato)
+        riga.innerHTML = creaPolaroid(dato)
     })
     .catch(function(error) {
             console.log("ERRORE")
         
     })
+    
     
 };
 
@@ -22,7 +23,7 @@ const chiamataApi = function() {
 let creaPolaroidHtml = function(elemento) {
     return `
     <div class="polaroid border bg-white p-3 pb-4">
-        <img class="img-fluid" src= ${elemento.url}>
+        <img class="img-fluid" src="${elemento.url}">
         <div class="polaroid-testo">
             <p>${elemento.title}</p>
             <p>${elemento.date}</p>
@@ -42,6 +43,5 @@ let creaPolaroid = function(array) {
 };
 
 chiamataApi();
-creaPolaroidHtml();
-creaPolaroid();
+
 
