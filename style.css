@@ -47,3 +47,9 @@ main {
     border-radius: 6px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
+
+.contenitore-foto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
