@@ -26,8 +26,8 @@ let creaPolaroidHtml = function(elemento) {
         <div class="polaroid border bg-white p-3 pb-4">
             <img class="img-fluid" src="${elemento.url}">
             <div class="polaroid-testo">
-                <p>${elemento.title}</p>
-                <p>${elemento.date}</p>
+                <p class="font-titolo">${elemento.title}</p>
+                <p class="font-date">${elemento.date}</p>
             </div>
         </div>
     </div> `
