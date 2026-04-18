@@ -1,3 +1,6 @@
+// COLLEGAMENTO DOM
+let riga = document.querySelector(`.contenitore-foto`);
+
 // FUNZIONE PER LA CHIAMATA API
 const chiamataApi = function() {
     fetch(`https://lanciweb.github.io/demo/api/pictures/`)
@@ -16,7 +19,7 @@ const chiamataApi = function() {
 };
 
 // FUNZIONE PER LA CREAZIONE DELLA SINGOLA POLAROID - DATI --> STRINGA HTML 
-let creaPolaroid = function(elemento) {
+let creaPolaroidHtml = function(elemento) {
     return `
     <div class="polaroid border bg-white p-3 pb-4">
         <img class="img-fluid" src= ${elemento.url}>
@@ -27,6 +30,18 @@ let creaPolaroid = function(elemento) {
     </div>`
 };
 
+// FUNZIONE CHE CICLA L'ARRAY DI OGGETTI
+let creaPolaroid = function(array) {
+    let contenitorePolaroid = ""
+
+    array.forEach(function(elemento) {
+        contenitorePolaroid = contenitorePolaroid + creaPolaroidHtml(elemento)  
+    });
+
+    return contenitorePolaroid
+};
+
 chiamataApi();
+creaPolaroidHtml();
 creaPolaroid();
 
