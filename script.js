@@ -23,7 +23,7 @@ const chiamataApi = function() {
 let creaPolaroidHtml = function(elemento) {
     return `
     <div class="col-4">
-        <div class="polaroid border bg-white p-3 pb-4">
+        <div class="polaroid-border border bg-white p-3 pb-4">
             <img class="chiodo" src="./img/pin.svg">
             <img class="img-fluid" src="${elemento.url}">
             <div class="polaroid-testo">
