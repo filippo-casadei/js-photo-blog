@@ -22,7 +22,7 @@ const chiamataApi = function() {
 // FUNZIONE PER LA CREAZIONE DELLA SINGOLA POLAROID - DATI --> STRINGA HTML 
 let creaPolaroidHtml = function(elemento) {
     return `
-    <div class="col-4">
+    <div class="col-12 col-md-6 col-lg-4">
         <div class="polaroid-border border bg-white p-3 pb-4">
             <img class="chiodo" src="./img/pin.svg">
             <img class="img-fluid" src="${elemento.url}">
