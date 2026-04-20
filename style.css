@@ -12,7 +12,15 @@
 .font-titolo {
     font-family: "Edu TAS Beginner", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.font-didascalia {
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
 }
 

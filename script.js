@@ -29,7 +29,7 @@ let creaPolaroidHtml = function(elemento) {
             <img class="chiodo" src="./img/pin.svg">
             <img class="bellissima-foto img-fluid" src="${elemento.url}">
             <div class="polaroid-testo">
-                <p class="font-titolo">${elemento.title}</p>
+                <p class="font-didascalia">${elemento.title}</p>
                 <p class="font-date">${elemento.date}</p>
             </div>
         </div>
