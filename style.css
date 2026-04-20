@@ -82,7 +82,7 @@ main {
 
 /* SPECIFICHE PER EFFETTO HOVER POLAROID E CHIODO */
 .polaroid-border:hover {
-    transform: rotate(5deg);
+    transform: rotate(10deg);
 }
 
 .polaroid-border:hover .chiodo {
