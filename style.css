@@ -100,12 +100,12 @@ main {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 10);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 9999;
 
 }
 
-.overlay-content {
+.contenuto-overlay {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -115,6 +115,6 @@ main {
 }
 
 .overlay-img {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 80%;
+    max-height: 80%;
 }
