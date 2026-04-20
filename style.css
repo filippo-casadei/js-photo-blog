@@ -66,6 +66,7 @@ main {
 
 .polaroid-border {
     position: relative;
+    transition: transform 0.2s ease;
 }
 
 /* SPECIFICHE CHIODO */
@@ -76,4 +77,14 @@ main {
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
+    transition: opacity 0.2s ease;
+}
+
+/* SPECIFICHE PER EFFETTO HOVER POLAROID E CHIODO */
+.polaroid-border:hover {
+    transform: rotate(5deg);
+}
+
+.polaroid-border:hover .chiodo {
+    opacity: 0;
 }
