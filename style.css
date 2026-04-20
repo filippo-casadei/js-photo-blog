@@ -66,6 +66,7 @@ main {
 
 .polaroid-border {
     position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
 
@@ -83,6 +84,7 @@ main {
 /* SPECIFICHE PER EFFETTO HOVER POLAROID E CHIODO */
 .polaroid-border:hover {
     transform: rotate(10deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .polaroid-border:hover .chiodo {
